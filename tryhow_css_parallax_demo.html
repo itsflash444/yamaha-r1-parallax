@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.w3schools.com/howto/tryhow_css_parallax_demo.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 May 2024 18:13:30 GMT -->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+
+
+}
+
+
+
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("white.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+ background-image: url("R6_2.png");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("4629771.jpg");
+  min-height: 400px;
+}
+
+.video-section {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.video-section video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.video-section .caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  z-index: 1;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">Yamaha R1</span>
+  </div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">About R1</h3>
+  <p>Yamaha R1 is one of the oldest and most famous bikes in the world of sports bikes. This bike has evolved with time and that's the reason why even after almost 15 years, it's the first choice of many speed enthusiasts worldwide. There are many Indians also which admire this bike and this article will take them further close to their favourite bike.
+     The full fairing and twin headlights style of Yamaha R1 has always impressed the bikers. It always looks fascinating with full body cowl and the newest version takes the game even ahead. The new aggressively styled fairing has been extended and comes with almost no graphics except R1 printed on it. Yamaha has used nickel bolts on its fairing to mount it on the R1 and that looks cool with nicely integrated side indicators. Its cowl has full-size integrated rear view mirrors and tinted visor at its front which makes its appearance compact and sporty with twin circular headlights. New Yamaha R1 has projector headlights which are placed very near to each other forming the nose of this bike. It looks extremely aerodynamic when seen from the side thanks to its upswept muffler, under cowl and racing strips on its wheels. Its split seat and funky rear cowl complements the overall designing. The rear LED tail light and fatty tyre makes it look macho and attractive at the back. Honda CBR1000RR Fireblade is its biggest challenge and Yamaha has made sure that R1 maintains its credibility by getting ranked high on the styling parameters.</p>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS WEIGHT</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>Most Beautiful Gen R1</p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">More power!</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>And most Aggresive Gen too!</p>
+  </div>
+</div>
+
+<div class="video-section">
+  <video autoplay loop muted playsinline>
+    <source src="Bike.mp4" type="video/mp4">
+  </video>
+  <div class="caption">
+  <span class="border">COOL!</span>
+  </div>
+</div>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/howto/tryhow_css_parallax_demo.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 May 2024 18:13:31 GMT -->
+</html>
